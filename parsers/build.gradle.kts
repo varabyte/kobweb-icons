@@ -17,6 +17,5 @@ dependencies {
 
 kobwebIconsPublication {
     artifactName.set("Kobweb Icons Parsers")
-    artifactId.set("kobweb-icons-parsers")
     description.set("Parsers for the upstream files of the icon sets that Kobweb generates Silk bindings for.")
 }

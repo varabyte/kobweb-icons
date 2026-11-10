@@ -14,6 +14,5 @@ dependencies {
 
 kobwebIconsPublication {
     artifactName.set("Kobweb Icons Model")
-    artifactId.set("kobweb-icons-model")
     description.set("Facts about external icon sets that Kobweb generates Silk bindings for.")
 }

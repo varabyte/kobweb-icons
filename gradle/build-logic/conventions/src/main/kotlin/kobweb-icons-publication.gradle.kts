@@ -9,9 +9,6 @@ abstract class KobwebIconsPublicationConfig {
     /** A human-readable display name for this artifact, e.g. "Kobweb Icons Model". */
     abstract val artifactName: Property<String>
 
-    /** The artifact ID, e.g. "kobweb-icons-model". */
-    abstract val artifactId: Property<String>
-
     /** A human-readable description for this artifact. */
     abstract val description: Property<String>
 }
@@ -42,7 +39,6 @@ dokka {
 // Wait until the calling build script has set the version and the config values
 afterEvaluate {
     mavenPublishing {
-        coordinates(artifactId = config.artifactId.get())
         publishToMavenCentral(automaticRelease = true)
         signAllPublications()
 
