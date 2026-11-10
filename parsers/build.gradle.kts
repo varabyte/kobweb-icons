@@ -8,7 +8,7 @@ group = "com.varabyte.kobweb.icons"
 version = libs.versions.kobweb.icons.get()
 
 dependencies {
-    api(project(":model"))
+    api(projects.model)
     implementation(libs.kotlinx.serialization.json)
 
     testImplementation(kotlin("test"))
