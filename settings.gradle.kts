@@ -3,6 +3,7 @@ pluginManagement {
         mavenCentral()
         gradlePluginPortal()
     }
+    includeBuild("gradle/build-logic")
 }
 
 @Suppress("UnstableApiUsage")

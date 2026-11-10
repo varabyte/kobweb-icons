@@ -1,14 +1,19 @@
 [versions]
 kobweb-icons="0.7.0-SNAPSHOT"
 #--------------------------------------
+dokka = "2.2.0"
 kotlin = "2.4.21"
 kotlinx-serialization = "1.11.0"
 truthish = "1.0.4"
+vanniktech-publish = "0.37.0"
 
 [libraries]
+dokka-plugin = { module = "org.jetbrains.dokka:org.jetbrains.dokka.gradle.plugin", version.ref = "dokka" }
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 kotlinx-serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "kotlinx-serialization" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
 truthish = { module = "com.varabyte.truthish:truthish", version.ref = "truthish" }
+vanniktech-publish-plugin = { module = "com.vanniktech:gradle-maven-publish-plugin", version.ref = "vanniktech-publish" }
 
 [bundles]
 
