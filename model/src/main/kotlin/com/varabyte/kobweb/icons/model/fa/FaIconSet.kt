@@ -6,9 +6,10 @@ import com.varabyte.kobweb.icons.model.IconSet
 /** Font Awesome's free icons (https://fontawesome.com). */
 object FaIconSet : IconSet {
     /**
-     * @property fontName The style's part of the desktop font file names, e.g. "Free-Solid-900".
+     * @property fileSuffix The end of the style's font file name in the repo's `otfs` folder, after
+     *   "Font Awesome <major> ".
      */
-    enum class Style(override val cssClass: String, val fontName: String) : IconSet.Style {
+    enum class Style(override val cssClass: String, private val fileSuffix: String) : IconSet.Style {
         SOLID("fa-solid", "Free-Solid-900"),
         REGULAR("fa-regular", "Free-Regular-400"),
         BRANDS("fa-brands", "Brands-Regular-400");
@@ -21,7 +22,7 @@ object FaIconSet : IconSet {
          *
          * @param major The Font Awesome major version, which is part of the file name.
          */
-        fun fontPath(major: Int): String = "otfs/Font Awesome $major $fontName.otf"
+        fun fontPath(major: Int): String = "otfs/Font Awesome $major $fileSuffix.otf"
     }
 
     override val displayName = "Font Awesome"
