@@ -13,8 +13,8 @@ object FaIconSet : IconSet {
         REGULAR("far", "Free-Regular-400"),
         BRANDS("fab", "Brands-Regular-400");
 
-        /** The style's name in [ICONS_JSON_PATH], e.g. "solid". */
-        val iconsJsonName: String get() = name.lowercase()
+        /** The style's name as Font Awesome writes it, e.g. "solid". */
+        val styleName: String get() = name.lowercase()
 
         /**
          * The style's desktop font in the repo, e.g. "otfs/Font Awesome 7 Free-Solid-900.otf".

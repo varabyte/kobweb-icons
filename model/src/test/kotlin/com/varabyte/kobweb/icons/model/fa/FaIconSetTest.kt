@@ -11,7 +11,7 @@ class FaIconSetTest {
 
     @Test
     fun stylePaths() {
-        assertThat(FaIconSet.Style.SOLID.iconsJsonName).isEqualTo("solid")
+        assertThat(FaIconSet.Style.SOLID.styleName).isEqualTo("solid")
         assertThat(FaIconSet.Style.SOLID.fontPath(major = 7)).isEqualTo("otfs/Font Awesome 7 Free-Solid-900.otf")
         assertThat(FaIconSet.Style.BRANDS.fontPath(major = 6)).isEqualTo("otfs/Font Awesome 6 Brands-Regular-400.otf")
     }

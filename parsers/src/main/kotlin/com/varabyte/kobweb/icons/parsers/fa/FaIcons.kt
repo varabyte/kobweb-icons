@@ -18,7 +18,7 @@ class FaIcons private constructor(val icons: Map<String, Icon>) {
                 val unicode = fields["unicode"] ?: error("Font Awesome icon \"$name\" has no unicode")
                 val styles = fields["free"]?.jsonArray.orEmpty().map { style ->
                     val styleName = style.jsonPrimitive.content
-                    FaIconSet.Style.entries.find { it.iconsJsonName == styleName }
+                    FaIconSet.Style.entries.find { it.styleName == styleName }
                         ?: error("Font Awesome icon \"$name\" has an unknown style: $styleName")
                 }
                 check(styles.isNotEmpty()) { "Font Awesome icon \"$name\" has no styles" }
