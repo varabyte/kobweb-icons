@@ -1,4 +1,4 @@
-package com.varabyte.kobweb.icons.parsers.mdi
+package com.varabyte.kobweb.icons.parsers.material
 
 import com.varabyte.truthish.assertThat
 import com.varabyte.truthish.assertThrows

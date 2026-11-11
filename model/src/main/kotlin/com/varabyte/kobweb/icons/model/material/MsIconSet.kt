@@ -1,8 +1,7 @@
-package com.varabyte.kobweb.icons.model.ms
+package com.varabyte.kobweb.icons.model.material
 
 import com.varabyte.kobweb.icons.model.IconMethodNamer
 import com.varabyte.kobweb.icons.model.IconSet
-import com.varabyte.kobweb.icons.model.mdi.MdiIconSet
 
 /** Google's Material Symbols (https://developers.google.com/fonts/docs/material_symbols). */
 object MsIconSet : IconSet {

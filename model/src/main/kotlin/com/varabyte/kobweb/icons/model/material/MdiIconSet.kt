@@ -1,4 +1,4 @@
-package com.varabyte.kobweb.icons.model.mdi
+package com.varabyte.kobweb.icons.model.material
 
 import com.varabyte.kobweb.icons.model.IconMethodNamer
 import com.varabyte.kobweb.icons.model.IconSet

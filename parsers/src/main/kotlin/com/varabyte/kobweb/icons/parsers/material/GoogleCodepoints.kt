@@ -1,4 +1,4 @@
-package com.varabyte.kobweb.icons.parsers.mdi
+package com.varabyte.kobweb.icons.parsers.material
 
 /**
  * A Google icon font's `.codepoints` file, which maps each icon name to its codepoint, keyed by name.

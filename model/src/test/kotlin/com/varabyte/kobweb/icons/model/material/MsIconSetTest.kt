@@ -1,4 +1,4 @@
-package com.varabyte.kobweb.icons.model.ms
+package com.varabyte.kobweb.icons.model.material
 
 import com.varabyte.truthish.assertThat
 import kotlin.test.Test
