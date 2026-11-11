@@ -6,7 +6,7 @@ import kotlin.test.Test
 class MsIconSetTest {
     @Test
     fun methodNames() {
-        assertThat(MsIconSet.methodNamer.methodNameFor("arrow_back")).isEqualTo("MsArrowBack")
+        assertThat(MsIconSet.methodNamer.nameFor("arrow_back")).isEqualTo("MsArrowBack")
     }
 
     @Test

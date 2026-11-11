@@ -6,6 +6,6 @@ import kotlin.test.Test
 class LucideIconSetTest {
     @Test
     fun methodNames() {
-        assertThat(LucideIconSet.methodNamer.methodNameFor("arrow-right")).isEqualTo("LucideArrowRight")
+        assertThat(LucideIconSet.methodNamer.nameFor("arrow-right")).isEqualTo("LucideArrowRight")
     }
 }

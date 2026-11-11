@@ -7,15 +7,15 @@ class IconMethodNamerTest {
     @Test
     fun capitalizesEachPartAndAddsPrefix() {
         val namer = IconMethodNamer(prefix = "Lucide", separator = '-')
-        assertThat(namer.methodNameFor("arrow-right")).isEqualTo("LucideArrowRight")
-        assertThat(namer.methodNameFor("arrow-1")).isEqualTo("LucideArrow1")
+        assertThat(namer.nameFor("arrow-right")).isEqualTo("LucideArrowRight")
+        assertThat(namer.nameFor("arrow-1")).isEqualTo("LucideArrow1")
     }
 
     @Test
     fun onlySplitsOnTheSeparator() {
         val namer = IconMethodNamer(prefix = "Ms", separator = '_')
-        assertThat(namer.methodNameFor("arrow_back")).isEqualTo("MsArrowBack")
-        assertThat(namer.methodNameFor("arrow-back")).isEqualTo("MsArrow-back")
+        assertThat(namer.nameFor("arrow_back")).isEqualTo("MsArrowBack")
+        assertThat(namer.nameFor("arrow-back")).isEqualTo("MsArrow-back")
     }
 
     @Test

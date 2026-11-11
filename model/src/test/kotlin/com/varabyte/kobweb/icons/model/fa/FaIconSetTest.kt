@@ -6,7 +6,7 @@ import kotlin.test.Test
 class FaIconSetTest {
     @Test
     fun methodNames() {
-        assertThat(FaIconSet.methodNamer.methodNameFor("address-book")).isEqualTo("FaAddressBook")
+        assertThat(FaIconSet.methodNamer.nameFor("address-book")).isEqualTo("FaAddressBook")
     }
 
     @Test

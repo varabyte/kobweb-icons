@@ -7,7 +7,7 @@ package com.varabyte.kobweb.icons.model
  * This naming rule is used by all Kobweb icon bindings.
  */
 class IconMethodNamer(val prefix: String, val separator: Char) {
-    fun methodNameFor(rawName: String): String {
+    fun nameFor(rawName: String): String {
         return prefix + rawName.split(separator).joinToString("") { part -> part.replaceFirstChar { it.uppercase() } }
     }
 
