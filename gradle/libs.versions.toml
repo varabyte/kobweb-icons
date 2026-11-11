@@ -1,5 +1,5 @@
 [versions]
-kobweb-icons="0.7.0-SNAPSHOT"
+kobweb-icons="0.7.0"
 #--------------------------------------
 dokka = "2.2.0"
 kotlin = "2.4.21"
