@@ -6,6 +6,9 @@ plugins {
 }
 
 abstract class KobwebIconsPublicationConfig {
+    /** The Maven artifact ID. Defaults to the root project name plus this project's name, e.g. "kobweb-icons-model". */
+    abstract val artifactId: Property<String>
+
     /** A human-readable display name for this artifact, e.g. "Kobweb Icons Model". */
     abstract val artifactName: Property<String>
 
@@ -14,6 +17,7 @@ abstract class KobwebIconsPublicationConfig {
 }
 
 val config = extensions.create<KobwebIconsPublicationConfig>("kobwebIconsPublication")
+config.artifactId.convention("${isolated.rootProject.name}-${project.name}")
 
 val githubPath = "https://github.com/varabyte/kobweb-icons"
 
@@ -39,6 +43,8 @@ dokka {
 // Wait until the calling build script has set the version and the config values
 afterEvaluate {
     mavenPublishing {
+        coordinates(artifactId = config.artifactId.get())
+
         publishToMavenCentral(automaticRelease = true)
         signAllPublications()
 

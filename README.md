@@ -12,14 +12,14 @@ This library is versioned separately from Kobweb, so each project can pick up up
 
 | Artifact | Contents |
 |---|---|
-| `com.varabyte.kobweb.icons:model` | Facts about each icon set (repos, file paths, styles, CSS classes), plus the rule for naming icon functions. Depends only on the Kotlin stdlib. |
-| `com.varabyte.kobweb.icons:parsers` | Parsers for each icon set's upstream files. |
+| `com.varabyte.kobweb.icons:kobweb-icons-model` | Facts about each icon set (repos, file paths, styles, CSS classes), plus the rule for naming icon functions. Depends only on the Kotlin stdlib. |
+| `com.varabyte.kobweb.icons:kobweb-icons-parsers` | Parsers for each icon set's upstream files. |
 
 ```kotlin
 dependencies {
     val version = "x.y.z" // Latest: https://central.sonatype.com/namespace/com.varabyte.kobweb.icons
-    implementation("com.varabyte.kobweb.icons:model:$version")
-    implementation("com.varabyte.kobweb.icons:parsers:$version")
+    implementation("com.varabyte.kobweb.icons:kobweb-icons-model:$version")
+    implementation("com.varabyte.kobweb.icons:kobweb-icons-parsers:$version")
 }
 ```
 
