@@ -4,7 +4,7 @@ package com.varabyte.kobweb.icons.model
 interface IconSet {
     /** One of an icon set's styles, e.g. Font Awesome's solid style. */
     interface Style {
-        /** The upstream CSS class that selects this style, e.g. "fas" or "material-icons-outlined". */
+        /** The upstream CSS class that selects this style, e.g. "fa-solid" or "material-icons-outlined". */
         val cssClass: String
     }
 

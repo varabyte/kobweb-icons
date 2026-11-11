@@ -9,9 +9,9 @@ object FaIconSet : IconSet {
      * @property fontName The style's part of the desktop font file names, e.g. "Free-Solid-900".
      */
     enum class Style(override val cssClass: String, val fontName: String) : IconSet.Style {
-        SOLID("fas", "Free-Solid-900"),
-        REGULAR("far", "Free-Regular-400"),
-        BRANDS("fab", "Brands-Regular-400");
+        SOLID("fa-solid", "Free-Solid-900"),
+        REGULAR("fa-regular", "Free-Regular-400"),
+        BRANDS("fa-brands", "Brands-Regular-400");
 
         /** The style's name as Font Awesome writes it, e.g. "solid". */
         val styleName: String get() = name.lowercase()
